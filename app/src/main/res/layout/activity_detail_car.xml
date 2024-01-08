@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="30dp"
+    tools:context=".DetailCarActivity">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detail_car_carName"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/detail_car_carBrand"
+                android:layout_marginBottom="5dp"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand" />
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_car_carModel"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model" />
+
+                <TextView
+                    android:id="@+id/detail_car_carYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="year" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/detail_car_statusSaleCar"
+                android:background="@drawable/bg_for_sale"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/white"
+                android:text="For Sale"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:minHeight="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/detail_car_btnEdit"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:text="Edit" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/detail_car_btnDelete"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/detail_car_btnBack"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

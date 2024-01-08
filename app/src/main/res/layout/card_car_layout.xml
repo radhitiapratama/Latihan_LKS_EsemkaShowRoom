@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/main_nameCar"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/main_brandCar"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand" />
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_modelCar"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model" />
+
+            <TextView
+                android:id="@+id/main_yearCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="year" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_statusSaleCar"
+            android:background="@drawable/bg_for_sale"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/white"
+            android:text="For Sale"
+            android:textAllCaps="false"
+            android:minHeight="0dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
